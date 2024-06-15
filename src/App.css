@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+:root{
+  --fontLibreCaslon: 'libre-caslon-display-regular',  serif;
+}
+.fontLibreCaslon {
+  font-family: var(--fontLibreCaslon) ;
+  font-size: 30px;
+  font-style: normal;
+}
