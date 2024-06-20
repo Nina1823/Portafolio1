@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 :root{
   --sedan-sc-regular: "Sedan SC", serif;
+  --libreCaslonDisplay:  "Libre Caslon Display", serif;
   --lila:#DE94DA;
   --rosaLavanda: #F2D1F2;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css"
-import profileImage from "../../Images/Perfil.jpg";
+import profileImage from "../../Images/Profile.jpg";
 
 export const Home = () => {
     return(

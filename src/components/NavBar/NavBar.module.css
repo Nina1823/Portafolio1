@@ -1,9 +1,9 @@
 .container{
     display: flex;
-    justify-content: right ;
-    align-items: right;
-    margin-left: 10px; 
-    background-color: #DE94DA;
+    justify-content: flex-end ;
+    align-items: center;
+    margin-left: 0px; 
+    background-color: var(--lila);
     height: 60px;
     width: 100%;
     font-weight: bold;
@@ -36,7 +36,7 @@
     width: 60px;
 }
 .items:hover {
-    box-shadow: 9px 9px 33px #cb6ac5, -9px -9px 33px #cb6ac5;
+    box-shadow: 9px 9px 33px var, -9px -9px 33px #cb6ac5;
     transform: translateY(-2px);
     width: 130px;
 }
