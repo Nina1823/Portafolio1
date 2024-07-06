@@ -1,0 +1,19 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAcademmicTraining{
+}
+
+.card{
+    background-color: pink;
+    border-radius: 5px;
+    width: 250px;
+}
+
+
+.name{
+
+}

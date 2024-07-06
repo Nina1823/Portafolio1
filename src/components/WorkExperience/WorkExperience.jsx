@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../WorkExperience/WorkExperience.module.css"
+import styles from "./WorkExperience.module.css"
 
 export const WorkExperience =()=>{
     return(
