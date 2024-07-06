@@ -1,7 +1,10 @@
 .containerpp{
     background-color: var(--rosaLavanda);
-    height: 600px;
     width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .containerSmall{

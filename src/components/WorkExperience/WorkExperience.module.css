@@ -1,0 +1,54 @@
+.container {
+    background-color: var(--lila);
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.title{
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 60px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 170px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -100px;
+}
+
+.backContainer{
+    width: 330px;
+    height: 200px;
+    background-color: #EAEDED;
+    border-radius: 10px;
+    display: flex;
+    margin-left: -40px;
+}
+.titleCard {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.backContainer{
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    margin-top: 100px;
+    margin-left: -80px;
+}
