@@ -4,16 +4,58 @@
     align-items: center;
 }
 
-.containerAcademmicTraining{
+.containerAcademmicTraining, .containerCursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: nowrap;
 }
 
-.card{
+.card, .cardCurso {
     background-color: pink;
     border-radius: 5px;
-    width: 250px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.5s ease, transform 0.3s ease; 
 }
 
+.card:hover, .cardCurso:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); 
+}
 
-.name{
+.icon {
+    font-size: 90px;
+    margin-bottom: 5px; 
+}
 
+.name {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: -10px; 
+    margin-bottom: 5px; 
+}
+
+.fecha {
+    font-size: 16px;
+    color: #363535;
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+.check{
+    font-size:25px;
+    color: green;
+}
+
+.check  :hover{
+    background-color: green;
 }
