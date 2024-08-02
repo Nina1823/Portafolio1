@@ -1,0 +1,12 @@
+.react, .next, .redux, .css, .html, .js, .node,
+.postgresql, .mysql, .figma, .powerbi, .github
+{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+.react:hover, .next:hover, .redux:hover, .css:hover, .html:hover, .js:hover, 
+.node:hover, .postgresql:hover, .mysql:hover, .figma:hover, .powerbi:hover,
+.github:hover{
+    transform: scale(1.2);
+}

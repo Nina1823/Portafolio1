@@ -1,101 +1,67 @@
 import React from "react";
-import styles from "./AcademicTraining.module.css"
-import { FaSchoolCircleCheck } from "react-icons/fa6";
-import { IoSchoolSharp } from "react-icons/io5";
-import { LiaUniversitySolid } from "react-icons/lia";
-import { FaUniversity } from "react-icons/fa";
-import { SiPowerbi } from "react-icons/si";
-import { RiEnglishInput } from "react-icons/ri";
-import { FaAngular } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
-import { CiCircleCheck } from "react-icons/ci";
+import Style from "./AcademicTraining.module.css";
+import { PiGraduationCapThin } from "react-icons/pi";
 
-export const AcademicTraining = () =>{
-
-    const school = [
-        {
-            icon:<FaSchoolCircleCheck />,
-            name: "Bachiller Técnico en Sistemas",
-            fecha: "Finalizado "
-        },
-        {
-            icon:<IoSchoolSharp />,
-            name:"Full Stack Web Developer",
-            fecha: "Finalizado"
-        },
-        {
-            icon: <LiaUniversitySolid />,
-            name: "Técnología en desarrollo de software",
-            fecha: "Proceso de graduación"
-        },
-        {
-            icon: <FaUniversity />,
-            name: "Ingeniería de sistemas",
-            fecha: "En proceso"
-        }
-    ];
-    const cursos=[
-        {
-            icon:<SiPowerbi />,
-            name: "PowerBI",
-            fecha: "Finalizado"
-        },
-        {
-            icon:<RiEnglishInput />,
-            name:"Nivel 1 y 2",
-            fecha: "Finalizado"
-        },
-        {
-            icon:<FaAngular />,
-            name: "Angular",
-            fecha: "MAMEE YA PUES!"
-        },
-        {
-            icon:<FaLaptopCode />,
-            name: "SAP",
-            fecha: "MAMEE YA PUES!"
-        }
-    ];
-
+export const AcademicTraining = () => {
     return (
-        <div>
-            <h1 className={styles.title}>FORMACIÓN ACADEMICA</h1>
-            <div className={styles.containerAcademmicTraining}>
-                {school.map((element, index) =>(
-                    <div key={index} className={styles.card}>
-                        <span className={styles.icon}>{element.icon}</span>
-                        <h3 className={styles.name}>{element.name}</h3>
-                        <span className={styles.fecha}>
-                            {element.fecha === "Finalizado" ? (
-                                <>
-                                    {element.fecha} <CiCircleCheck className={styles.check}/>
-                                </>
-                            ) : (
-                                element.fecha
-                            )}
-                        </span>
+        <div className={Style.container}>
+            <section className={Style.curriculum}>
+                <div className={Style.contenidoSeccion}>
+                    <h2>Formación Académica</h2>
+                    <div className={Style.timeline}>
+                        {/* Cada ítem de formación */}
+                        <div className={Style.item}>
+                            <div className={Style.conectord}>
+                                <PiGraduationCapThin className={Style.grado} />
+                                <div className={Style.linead}></div>
+                            </div>
+                            <div className={Style.content}>
+                                <h4 className={Style.escuela}>Ingeniería en Sistemas</h4>
+                                <span className={Style.casa}>Instituto tecnológico Metropolitano</span>
+                                <span className={Style.fecha}>2020 - Actualidad</span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                            </div>
+                        </div>
+                        <div className={Style.item}>
+                            <div className={Style.conectord}>
+                                <PiGraduationCapThin className={Style.grado} />
+                                <div className={Style.linead}></div>
+                            </div>
+                            <div className={Style.content}>
+                                <h4 className={Style.escuela}>Tecnología en desarrollo de software</h4>
+                                <span className={Style.casa}>Instituto tecnológico Metropolitano</span>
+                                <span className={Style.fecha}>En proceso de grados</span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                            </div>
+                        </div>
+                        <div className={Style.item}>
+                        <div className={Style.conectord}>
+                                <PiGraduationCapThin className={Style.grado} />
+                                <div className={Style.linead}></div>
+                            </div>
+                            <div className={Style.content}>
+                                <h4 className={Style.escuela}>Full Stack web developer</h4>
+                                <span className={Style.casa}>Henry</span>
+                                <span className={Style.fecha}>2022 - 2023</span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                            </div>
+                        </div>
+                        <div className={Style.item}>
+                        <div className={Style.conectord}>
+                                <PiGraduationCapThin className={Style.grado} />
+                                <div className={Style.linead}></div>
+                            </div>
+                            <div className={Style.content}>
+                                <h4 className={Style.escuela}>Bachiller Técnico en Sistemas</h4>
+                                <span className={Style.casa}>Institución Educativa Gonzalo Restrepo Jaramillo</span>
+                                <span className={Style.fecha}>2018 - 2019</span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                            </div>
+                        </div>
                     </div>
-                ))}
-            </div>
-            <h1 className={styles.title}>CURSOS</h1>
-            <div className={styles.containerCursos}>
-                {cursos.map((element,index)=>(
-                    <div key={index} className={styles.cardCurso}>
-                        <span className={styles.icon}>{element.icon}</span>
-                        <span className={styles.name}>{element.name}</span>
-                        <span className={styles.fecha}>
-                            {element.fecha === "Finalizado" ? ( // Verificación condicional para agregar el ícono
-                                <>
-                                    {element.fecha} <CiCircleCheck className={styles.check}/>
-                                </>
-                            ) : (
-                                element.fecha
-                            )}
-                        </span>
-                    </div>
-                ))}
-
-            </div>
+                </div>
+                <button className={Style.button}>Conocer más</button>
+            </section>
         </div>
-    )
-}
+    );
+};
